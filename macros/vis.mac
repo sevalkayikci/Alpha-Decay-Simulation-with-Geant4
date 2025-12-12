@@ -1,0 +1,15 @@
+/run/initialize
+
+# Qt tabanlı TSG sürücüsünü aç (senin sistemde %100 var)
+/vis/open TSGQt
+
+/vis/viewer/set/background 0 0 0
+/vis/drawVolume
+
+/vis/scene/add/axes 0 0 0 10 cm
+
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set default white
+
+/vis/viewer/refresh
